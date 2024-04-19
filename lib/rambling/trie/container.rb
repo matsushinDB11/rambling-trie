@@ -253,7 +253,7 @@ module Rambling
           new_phrase = chars.slice starting_index..(chars.length - 1)
           words = root.match_prefix(new_phrase)
           longest_word = nil
-          words.each do | word |
+          words.each do |word|
             if longest_word.nil?
               longest_word = word
             elsif longest_word.size < word.size
@@ -276,7 +276,7 @@ module Rambling
         new_phrase = chars.slice 0..(chars.length - 1)
         words = root.match_prefix(new_phrase)
         longest_word = nil
-        words.each do | word |
+        words.each do |word|
           if longest_word.nil?
             longest_word = word
           elsif longest_word.size < word.size
